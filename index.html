@@ -1,0 +1,275 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تنفيذ</title>
+    <!-- Favicon -->
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        direction: rtl;
+      }
+
+      body {
+        padding: 0 0 28px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+      }
+
+      .main {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .Header {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../Assets/images/banner-01.jpg);
+        background-position: top;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+      }
+      .Header::after {
+        content: "";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 30%;
+        background-color: rgba(13, 61, 4, 0.904);
+        opacity: 0.4;
+      }
+      .Header .Texts {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+      }
+      .Header .Texts h1 {
+        font-size: 250px;
+        color: #ede7da;
+      }
+      .Header .Texts p {
+        font-size: 56px;
+      }
+
+      .WhoWeAre .Title h2 {
+        color: #527670;
+        font-size: 45px;
+        font-weight: bold;
+        border-bottom: 20px solid #527670;
+        width: 160px;
+        padding: 8px;
+      }
+      .WhoWeAre .DESC {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      .WhoWeAre .DESC p {
+        font-size: 22px;
+        font-weight: 400;
+        color: #51615f;
+      }
+
+      .version {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 4px solid #919191;
+      }
+      .version .version_item {
+        display: flex;
+        padding: 20px 28px;
+        align-items: center;
+        gap: 12px;
+      }
+      .version .version_item .image {
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .version .version_item .image .img {
+        width: 250px;
+      }
+      .version .version_item .content h3 {
+        color: #1d564d;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .version .version_item .content P {
+        font-size: 20px;
+        font-weight: 400;
+        color: #717b7b;
+      }
+      .version .line {
+        border: 3px solid #919191;
+        margin: 0;
+      }
+
+      .rate-us {
+        text-align: center;
+      }
+      .rate-us h4 {
+        background-color: #b9b9b9;
+        padding: 30px 0px;
+        font-size: 35px;
+        color: #4e716b;
+      }
+
+      .features {
+        display: flex;
+        align-items: center;
+        gap: 120px;
+      }
+      .features .image {
+        text-align: center;
+        border: 1px solid #eee;
+        padding: 15px 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .features .image .img {
+        width: 250px;
+      }
+      .features .image h4 {
+        color: #20554b;
+        font-weight: bold;
+        font-size: 20px;
+      } /*# sourceMappingURL=style.css.map */
+    </style>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="Header">
+      <img src="/Assets/images/" alt="" />
+    </header>
+    <!-- header -->
+
+    <main class="main">
+      <div class="WhoWeAre">
+        <div class="container">
+          <div class="Title">
+            <h2>من نحن</h2>
+          </div>
+
+          <div class="DESC">
+            <p>
+              تنفيذ هي منصه متخصصه في تقديم خدمات محاما احترافيه <br />
+              وشامله . نهدف الي توفير افضل التجارب القانونيه لمستخدمينا من خلال
+              تقديم <br />
+              استشارات قانونيه موثوقه وخدمات قانة قانونيه متنوعه
+            </p>
+
+            <p>
+              مع التركيز علي تلبيه احتياجات عملائنا بشكل شامل فاننا نقدم ايضا
+              <br />خدمه محامي الطوارئ للعملاء الذين يحتاجون الي دعم قانوني
+              <br />
+              فوري في حالات الازمات القانونيه العاجله,ويمكن الاعتماد علينا
+              <br />
+              لتقديم الدعم اللازم والحلول السريعه.
+            </p>
+
+            <p>
+              نحن ملتزمون بتوفير خدمه عملاء استثنائيه ,ونسعي جاهدين لضمان <br />
+              رضا العملاء من خلال تقديم الحلول القانونيه الفعاله والموثقه<br />
+              بغض النظر عن طبيعه المشكله القانونيه التي تواجهها ,يمكنك <br />
+              الاعتماد علينا كشريك موثوق به في رحلتك القانونيه <br />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version -->
+
+      <div class="container">
+        <div class="version">
+          <div class="version_item">
+            <div class="image">
+              <img class="img" src="/Assets/images/ver.png" />
+            </div>
+
+            <div class="content">
+              <h3>رؤيتنا</h3>
+              <p>
+                ان نصبح الواجهه الاولي والمفضله للافراد والشركات <br />
+                في البحث عن حلول قانونيه موثوقه ومتطوره
+              </p>
+            </div>
+          </div>
+
+          <hr class="line" />
+
+          <div class="version_item">
+            <div class="image">
+              <img class="img" src="/Assets/images/mission.png" />
+            </div>
+
+            <div class="content">
+              <h3>مهمتنا</h3>
+              <p>
+                تقديم خدمات قانونيه متميزه وشامله تلبي احتياجات <br />
+                عملائنا بدقه وفعاليه .مع التركيز علي الجوده <br />
+                والابتكار في كل خطوه
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End  Version -->
+
+      <!-- RATE -->
+
+      <div class="rate-us">
+        <h4>قيمنا</h4>
+      </div>
+
+      <!-- features -->
+
+      <div class="container">
+        <div class="features">
+          <div class="image">
+            <img class="img" src="/Assets/images/ehtraf.png" />
+            <h4>الاحترافيه</h4>
+          </div>
+
+          <div class="image">
+            <img class="img" src="/Assets/images/gawda.png" />
+
+            <h4>الجوده</h4>
+          </div>
+
+          <div class="image">
+            <img class="img" src="/Assets/images/shahfa.png" />
+
+            <h4>الشفافيه</h4>
+          </div>
+
+          <div class="image">
+            <img class="img" src="/Assets/images/ebtkar.png" />
+            <h4>الابتكار</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- js -->
+  </body>
+</html>

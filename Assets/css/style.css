@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+body {
+  padding: 0 0 28px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.main {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../Assets/images/banner-01.jpg);
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.Header::after {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 30%;
+  background-color: rgba(13, 61, 4, 0.904);
+  opacity: 0.4;
+}
+.Header .Texts {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.Header .Texts h1 {
+  font-size: 250px;
+  color: #ede7da;
+}
+.Header .Texts p {
+  font-size: 56px;
+}
+
+.WhoWeAre .Title h2 {
+  color: #527670;
+  font-size: 45px;
+  font-weight: bold;
+  border-bottom: 20px solid #527670;
+  width: 160px;
+  padding: 8px;
+}
+.WhoWeAre .DESC {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.WhoWeAre .DESC p {
+  font-size: 22px;
+  font-weight: 400;
+  color: #51615f;
+}
+
+.version {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 4px solid #919191;
+}
+.version .version_item {
+  display: flex;
+  padding: 20px 28px;
+  align-items: center;
+  gap: 12px;
+}
+.version .version_item .image {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.version .version_item .image .img {
+  width: 250px;
+}
+.version .version_item .content h3 {
+  color: #1d564d;
+  font-size: 25px;
+  font-weight: bold;
+}
+.version .version_item .content P {
+  font-size: 20px;
+  font-weight: 400;
+  color: #717b7b;
+}
+.version .line {
+  border: 3px solid #919191;
+  margin: 0;
+}
+
+.rate-us {
+  text-align: center;
+}
+.rate-us h4 {
+  background-color: #b9b9b9;
+  padding: 30px 0px;
+  font-size: 35px;
+  color: #4e716b;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+.features .image {
+  text-align: center;
+  border: 1px solid #eee;
+  padding: 15px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.features .image .img {
+  width: 250px;
+}
+.features .image h4 {
+  color: #20554b;
+  font-weight: bold;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
