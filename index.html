@@ -26,14 +26,14 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 70px;
+        gap: 40px;
       }
 
       .main {
         background-color: #ffffff;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
       }
 
       .Header {
@@ -45,29 +45,18 @@
         position: relative;
         overflow: hidden;
       }
-      .Header::after {
-        content: "";
-        width: 200%;
-        height: 200%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        border-radius: 30%;
-        background-color: rgba(13, 61, 4, 0.904);
-        opacity: 0.4;
-      }
-      .Header .Texts {
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-      }
-      .Header .Texts h1 {
-        font-size: 250px;
-        color: #ede7da;
-      }
-      .Header .Texts p {
-        font-size: 56px;
+
+      .banner {
+        width: 100%;
+        aspect-ratio: 5/3;
+        max-height: 30vh;
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        border-bottom: 10px #8f8061 solid;
       }
 
       .WhoWeAre .Title h2 {
@@ -89,11 +78,26 @@
         color: #51615f;
       }
 
+      @media (max-width: 576px) {
+        .WhoWeAre .Title h2 {
+          font-size: 20px;
+          padding: 5px;
+          border-bottom: 10px solid #527670;
+          width: 80px;
+          padding: 6px;
+        }
+        .WhoWeAre .DESC p {
+          font-size: 20px;
+          font-weight: 400;
+          color: #51615f;
+        }
+      }
       .version {
         display: flex;
         flex-direction: column;
         gap: 10px;
         border: 4px solid #919191;
+        flex-wrap: wrap;
       }
       .version .version_item {
         display: flex;
@@ -104,9 +108,16 @@
       .version .version_item .image {
         background-color: #ffffff;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        flex: 1;
+        max-width: 150px;
       }
       .version .version_item .image .img {
-        width: 250px;
+        width: 100%;
+        max-height: 150px;
+        aspect-ratio: 1/1;
+        -o-object-fit: contain;
+        object-fit: contain;
+        min-width: 100px;
       }
       .version .version_item .content h3 {
         color: #1d564d;
@@ -123,6 +134,25 @@
         margin: 0;
       }
 
+      @media (min-width: 576px) {
+        .version .version_item .image {
+          padding: 18px 14px;
+        }
+        .version .version_item .image .img {
+          width: 100%;
+          max-height: 150px;
+          aspect-ratio: 1/1;
+          -o-object-fit: contain;
+          object-fit: contain;
+        }
+        .version .version_item .content h3 {
+          font-size: 18px;
+        }
+        .version .version_item .content P {
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
       .rate-us {
         text-align: center;
       }
@@ -133,19 +163,44 @@
         color: #4e716b;
       }
 
+      @media (max-width: 576px) {
+        .rate-us {
+          text-align: center;
+        }
+        .rate-us h4 {
+          background-color: #b9b9b9;
+          padding: 15px 0px;
+          font-size: 30px;
+          color: #4e716b;
+        }
+      }
       .features {
         display: flex;
-        align-items: center;
-        gap: 120px;
+        gap: 24px;
+        flex-wrap: wrap;
       }
       .features .image {
         text-align: center;
         border: 1px solid #eee;
         padding: 15px 20px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        flex: 1;
+        max-width: 250px;
       }
-      .features .image .img {
-        width: 250px;
+      .features .image img {
+        width: 100%;
+        max-height: 150px;
+        aspect-ratio: 1/1;
+        -o-object-fit: contain;
+        object-fit: contain;
+      }
+      @media (max-width: 576px) {
+        .features .image {
+          padding: 12px 15px;
+        }
+        .features .image .img {
+          width: 90px;
+        }
       }
       .features .image h4 {
         color: #20554b;
@@ -153,13 +208,12 @@
         font-size: 20px;
       } /*# sourceMappingURL=style.css.map */
     </style>
+    
   </head>
 
   <body>
     <!-- header -->
-    <header class="Header">
-      <img src="/Assets/images/" alt="" />
-    </header>
+    <img src="Assets/images/banner-01.jpg" class="banner" alt="" />
     <!-- header -->
 
     <main class="main">
@@ -202,7 +256,7 @@
         <div class="version">
           <div class="version_item">
             <div class="image">
-              <img class="img" src="/Assets/images/ver.png" />
+              <img class="img" src="Assets/images/ver.png" />
             </div>
 
             <div class="content">
@@ -218,7 +272,7 @@
 
           <div class="version_item">
             <div class="image">
-              <img class="img" src="/Assets/images/mission.png" />
+              <img class="img" src="Assets/images/mission.png" />
             </div>
 
             <div class="content">
@@ -249,19 +303,16 @@
             <img class="img" src="/Assets/images/ehtraf.png" />
             <h4>الاحترافيه</h4>
           </div>
-
-          <div class="image">
-            <img class="img" src="/Assets/images/gawda.png" />
-
-            <h4>الجوده</h4>
-          </div>
-
           <div class="image">
             <img class="img" src="/Assets/images/shahfa.png" />
 
             <h4>الشفافيه</h4>
           </div>
+          <div class="image">
+            <img class="img" src="/Assets/images/gawda.png" />
 
+            <h4>الجوده</h4>
+          </div>
           <div class="image">
             <img class="img" src="/Assets/images/ebtkar.png" />
             <h4>الابتكار</h4>
